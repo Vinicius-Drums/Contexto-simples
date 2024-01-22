@@ -1,0 +1,137 @@
+/* Configurações gerais do corpo da página */
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  /* Transições suaves para alterações de cor */
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Estilo para o tema claro */
+body.claro {
+  color: #333; /* Cor do texto no tema claro */
+}
+
+/* Estilo para o tema escuro */
+body.escuro {
+  background-color: #333;
+  color: #eae2e2; /* Cor do texto no tema escuro */
+}
+
+/* Container principal da aplicação */
+.app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  position: relative;
+}
+
+/* Estilo para o botão de alternar tema */
+.botao-alternar-tema {
+  background-color: #3a3836;
+  color: #fff;
+  padding: 8px;
+  font-size: 0.9rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  position: fixed;
+  top: 10px;
+  right: 10px;
+}
+
+/* Estilo hover para o botão de alternar tema */
+.botao-alternar-tema:hover {
+  background-color: #353231;
+}
+
+/* Estilo para o título da aplicação */
+h1 {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+/* Estilo para a imagem destacada */
+.foto {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  border: 5px solid #fff;
+  margin-top: 1rem;
+  width: 100%;
+  max-width: 600px;
+}
+
+/* Estilo para o conteúdo principal */
+.conteudo {
+  margin-top: 1rem;
+  width: 80%;
+  max-width: 600px;
+}
+
+/* Estilo para a mensagem instrutiva */
+p {
+  text-align: center;
+}
+
+/* Estilo para o formulário */
+.formulario {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin-top: 1rem;
+}
+
+/* Estilo para rótulos do formulário */
+label {
+  display: block;
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+
+/* Estilo para caixa de entrada de texto do formulário */
+input {
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  width: calc(100% - 12px);
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Estilo para o botão de envio do formulário */
+.botao-enviar {
+  padding: 8px;
+  font-size: 0.9rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 100%;
+  box-sizing: border-box;
+  margin-top: 0.5rem;
+  max-width: 200px;
+  background-color: #2ecc71;
+  color: #fff;
+  margin-bottom: 1rem;
+  margin-left: auto;
+  margin-right: auto;
+  margin-left: 16px;
+}
+
+/* Estilo hover para o botão de envio do formulário */
+.botao-enviar:hover {
+  background-color: #27ae60;
+}
+
+/* Estilo para mensagem de sucesso */
+.mensagem-sucesso {
+  color: #1ba21b;
+}
+
+/* Estilo para mensagem de erro */
+.mensagem-erro {
+  color: #ff0000;
+}
